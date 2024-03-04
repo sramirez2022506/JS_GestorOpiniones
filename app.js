@@ -1,6 +1,6 @@
 import {config} from "dotenv";
-import Server from "./configs/server.js";
 config();
+import Server from "./configs/server.js";
 
 const server = new Server();
 
