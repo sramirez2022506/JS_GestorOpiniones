@@ -96,7 +96,7 @@ export const passwordUpdate = async (req, res) =>{
         const user = await User.findById(userId);
 
         const passwordCorrect = await bcryptjs.compare(
-            currentPassword,
+            actualPassword,
             user.password
         );
 
